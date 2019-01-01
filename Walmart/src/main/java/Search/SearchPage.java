@@ -15,7 +15,7 @@ public class SearchPage extends CommonAPI {
         navigateBack();
         typeOnElementEntry("#global-search-input", "Toys");
         navigateBack();
-        typeOnElementEntry("#global-search-input", "Gocery");
+        typeOnElementEntry("#global-search-input", "Grocery");
         navigateBack();
     }
 }
