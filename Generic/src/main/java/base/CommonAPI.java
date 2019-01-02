@@ -34,8 +34,7 @@ public class CommonAPI {
     {driver.findElement(By.id(locator)).sendKeys(value);}
 
     public void typeOnElement(String locator, String value) {
-        try {
-            driver.findElement(By.cssSelector(locator)).sendKeys(value);
+        try {driver.findElement(By.cssSelector(locator)).sendKeys(value);
         } catch (Exception ex1) {
             try {
                 System.out.println("First Attempt was not successful");
@@ -69,24 +68,6 @@ public class CommonAPI {
             }
         }
     }
-//    public void typeOnElementEntryName(String locator, String value) {
-//        try {
-//            drive.findElement(By.cssSelector(locator)).sendKeys(value);
-//        } catch (Exception ex1) {
-//            try {
-//                System.out.println("First Attempt was not successful");
-//                drive.findElement(By.name(locator)).sendKeys(value);
-//            } catch (Exception ex2) {
-//                try {
-//                    System.out.println("Second Attempt was not successful");
-//                    drive.findElement(By.xpath(locator)).sendKeys(value);
-//                } catch (Exception ex3) {
-//                    System.out.println("Third Attempt was not successful");
-//                    drive.findElement(By.id(locator)).sendKeys(value);
-//                }
-//            }
-//        }
-//    }
 
     public void clearField(String locator) {driver.findElement(By.id(locator)).clear();}
 
